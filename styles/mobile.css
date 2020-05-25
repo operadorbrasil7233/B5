@@ -1,5 +1,12 @@
-/* Footer Styling */
-.footer .container {
+/* Utilities */
+
+.container-between {
   flex-direction: column;
   text-align: center;
+}
+
+/* Header */
+
+.header .container section {
+  margin-bottom: 1rem;
 }
