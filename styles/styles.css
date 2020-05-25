@@ -60,10 +60,21 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   border: solid 1px var(--primary-color);
+  transition: 0.3s;
 }
 
 .btn:hover {
   cursor: pointer;
+}
+
+.btn.text-primary:hover {
+  background: var(--primary-color);
+  color: var(--primary-white);
+}
+
+.btn.bg-primary-yellow:hover {
+  background: var(--light-orange);
+  /* color: ; */
 }
 
 .text-primary {
@@ -335,7 +346,7 @@ main .container {
 }
 
 .info-item > div:nth-child(2) > div {
-  /* margin-left: 10px; */
+  margin-left: 10px;
 }
 
 .info-section .info-title {
