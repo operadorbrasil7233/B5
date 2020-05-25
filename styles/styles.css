@@ -27,6 +27,7 @@ ul, ol {
   --primary-dark-gray: #526280;
   --primary-white: #FFF;
   --secondary-white: #F6EFE9;
+  --primary-yellow: #FFED00;
 }
 
 /* General Styling */
@@ -71,6 +72,14 @@ body {
   color: var(--primary-gray);
 }
 
+.text-white {
+  color: var(--primary-white);
+}
+
+.text-primary-yellow {
+  color: var(--primary-yellow);
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -109,6 +118,10 @@ body {
 
 .bg-secondary-gray {
   background: var(--secondary-gray);
+}
+
+.bg-primary-yellow {
+  background: var(--primary-yellow);
 }
 
 .inline-block {
@@ -285,6 +298,98 @@ main .container {
 
 .more-main-features .circle {
   background: var(--secondary-white);
+}
+
+/* Diverses Section */
+.diverses-section {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-white);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Shopping Styling */
+.diverses-section .shopping-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shopping-section .shopping-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.shopping-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.shopping-intro div:first-child p {
+  margin-top: 5px;
+}
+
+.shopping-features > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 120px;
+  margin: 0px 2px 3px;
+}
+
+.shopping-features > div p {
+  margin-top: 5px;
+}
+
+/* Lending Styling */
+.lending-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lending-section > div {
+  margin: 0px 15px;
+  width: 100%;
+  height: 175px;
+  padding: 20px;
+}
+
+.lending-section > div:nth-child(1) {
+  background: #FF7A00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.lending-section > div:nth-child(1) img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.lending-section > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #FF500F;
+}
+
+
+.lending-section .btn {
+  color: #867E1A;
+  display: inline-block;
+  width: 130px;
 }
 
 /* Footer Styling */
