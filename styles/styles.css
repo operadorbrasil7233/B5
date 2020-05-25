@@ -28,6 +28,8 @@ ul, ol {
   --primary-white: #FFF;
   --secondary-white: #F6EFE9;
   --primary-yellow: #FFED00;
+  --primary-green: #16C968;
+  --primary-pink: #FF003D;
 }
 
 /* General Styling */
@@ -78,6 +80,14 @@ body {
 
 .text-primary-yellow {
   color: var(--primary-yellow);
+}
+
+.text-primary-green {
+  color: var(--primary-green)
+}
+
+.text-primary-pink {
+  color: var(--primary-pink);
 }
 
 .text-bold {
@@ -300,6 +310,52 @@ main .container {
   background: var(--secondary-white);
 }
 
+/* Info Section */
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 15px 0px;
+}
+
+.info-section .info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--primary-white);
+  border-radius: 8px;
+  height: 190px;
+  padding: 20px;
+}
+
+.info-section .info-item > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-item > div:nth-child(2) > div {
+  /* margin-left: 10px; */
+}
+
+.info-section .info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-section .info-valor-container {
+  margin: 5px 0px;
+}
+
+.info-title div:first-child {
+  display: flex;
+}
+
+.info-section .info-title img {
+  margin-right: 10px;
+}
+
 /* Diverses Section */
 .diverses-section {
   display: flex;
@@ -320,7 +376,6 @@ main .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 
 .shopping-intro {
