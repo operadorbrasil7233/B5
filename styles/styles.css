@@ -33,7 +33,7 @@ ul, ol {
 
 body {
   font-family: 'Lato', sans-serif;
-  background: var(--secondary-gray);
+  background: var(--light-orange);
   color: var(--primary-gray);
   line-height: 1rem;
 }
@@ -67,6 +67,10 @@ body {
   color: var(--primary-color);
 }
 
+.text-primary-gray {
+  color: var(--primary-gray);
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -81,6 +85,18 @@ body {
 
 .text0875 {
   font-size: 0.875rem;
+}
+
+.text1 {
+  font-size: 1rem;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+}
+
+.bg-light-orange {
+  background: var(--light-orange);
 }
 
 .bg-white {
@@ -105,6 +121,14 @@ body {
   width: 50px;
 }
 
+.b-radius5 {
+  border-radius: 5px;
+}
+
+.b-radius8 {
+  border-radius: 8px;
+}
+
 /* Header Styling */
 
 .header .container section {
@@ -124,6 +148,87 @@ body {
 
 .header .circle p {
   margin: 0;
+}
+
+/* Main Section Styling */
+
+main> .bg-primary {
+  width: 100%;
+  height: 65px;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* Navbar styling */
+
+.navbar {
+  padding: 20px;
+}
+
+.navbar section:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar section:first-child p:first-child {
+  margin-bottom: 5px;
+}
+
+.navbar > section {
+  margin: 1rem auto;
+}
+
+.navbar section:nth-child(2) {
+  color: var(--primary-white);
+  padding: 10px 20px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item p, .nav-item .circle {
+  display: flex;
+}
+
+.nav-item .circle {
+  margin-right: 15px;
+}
+
+.nav-item .circle img {
+  width: 20px;
+}
+
+/* Babi Section */
+.babi-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 15px 0px;
+}
+
+.babi-section div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.babi-section div:first-child img {
+  width: 40px;
+  margin-right: 10px;
 }
 
 /* Footer Styling */
