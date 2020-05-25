@@ -36,3 +36,42 @@ body {
   color: var(--primary-gray);
   line-height: 1rem;
 }
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text075 {
+  font-size: 0.75rem;
+}
+
+.bg-white {
+  background: var(--primary-white);
+}
+
+.bg-secondary-white {
+  background: var(--secondary-white);
+}
+
+/* Footer Styling */
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 10px 0px;
+}
