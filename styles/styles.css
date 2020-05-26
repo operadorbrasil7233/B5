@@ -94,7 +94,7 @@ body {
 }
 
 .text-primary-green {
-  color: var(--primary-green)
+  color: var(--primary-green);
 }
 
 .text-primary-pink {
@@ -289,6 +289,7 @@ main .container {
 
 .features-container {
   margin-left: 20px;
+  width: 100%;
 }
 
 /* Main Features */
@@ -296,6 +297,7 @@ main .container {
 .main-features-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .main-features-container .main-feature-item {
@@ -340,6 +342,7 @@ main .container {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   margin: 15px 0px;
+  align-items: center;
 }
 
 .info-section .info-item {
@@ -350,6 +353,8 @@ main .container {
   border-radius: 8px;
   height: 190px;
   padding: 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .info-section .info-item>div:nth-child(2) {
@@ -394,7 +399,7 @@ main .container {
 
 .diverses-section .shopping-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -445,12 +450,21 @@ main .container {
   padding: 20px;
 }
 
+.lending-section img:first-child {
+  width: 100%;
+}
+
 .lending-section>div:nth-child(1) {
   background: #FF7A00;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
+}
+
+.lending-section h4, .lending-section ul, .lending-section .btn {
+  z-index: 2;
 }
 
 .lending-section>div:nth-child(1) img {
@@ -468,6 +482,7 @@ main .container {
 }
 
 .lending-section .btn {
+  position: relative;
   color: #867E1A;
   display: inline-block;
   width: 130px;
